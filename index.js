@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
     res.json(data);
 });
 
-// Start our Express server on port 3000
-app.listen(3000, () => {
-    console.log('Server is running on port 3000');
+// Start our Express server on port 80
+app.listen(80, () => {
+    console.log('Server is running on port 80');
 });
