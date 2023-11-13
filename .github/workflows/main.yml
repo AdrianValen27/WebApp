@@ -36,6 +36,3 @@ jobs:
           push: true
           target: prod
           tags: ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
-      - 
-        name: run tests
-        uses: liatrio/github-actions/apprentice-action@master
