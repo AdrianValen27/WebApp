@@ -1,11 +1,11 @@
 name: ci
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: node:${NODE_VERSION}-alpine
     steps:
     - name: run tests
       uses: liatrio/github-actions/apprentice-action@master
